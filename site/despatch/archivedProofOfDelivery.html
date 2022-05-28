@@ -89,13 +89,13 @@
                             <h1>Pickup Details</h1>
                             <div>
                                 <ul class="nav nav-tabs nav-fill" role="tablist">
-                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#pickup-1">Pickup 1</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#pickup-1">Pickup 1</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#pickup-2">Pickup 2</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" id="PickupCompanyName-3" href="#pickup-3">Pickup 3</a></li>
-                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" id="PickupCompanyName-4" href="#pickup-4">Pickup 4</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" id="PickupCompanyName-4" href="#pickup-4">Pickup 4</a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div class="tab-pane" role="tabpanel" id="pickup-1">
+                                    <div class="tab-pane active" role="tabpanel" id="pickup-1">
                                         <div id="pickupLocation-1">
                                             <div class="row">
                                                 <div class="col" style="margin-top: 0px;"><label class="form-label">Company Name</label><input class="form-control" type="text" id="PickupCompanyName-1" style="margin-top: -6px;" disabled=""></div>
@@ -197,7 +197,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane active" role="tabpanel" id="pickup-4">
+                                    <div class="tab-pane" role="tabpanel" id="pickup-4">
                                         <div id="pickupLocation-4">
                                             <div class="row">
                                                 <div class="col"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;" disabled=""></div>
@@ -238,13 +238,13 @@
                             <h1>Dropoff Details</h1>
                             <div>
                                 <ul class="nav nav-tabs nav-fill" role="tablist">
-                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-1">Drop 1</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#dropoff-1">Drop 1</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-2">Drop 2</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-3">Drop 3</a></li>
-                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#dropoff-4">Drop 4</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-4">Drop 4</a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div class="tab-pane" role="tabpanel" id="dropoff-1">
+                                    <div class="tab-pane active" role="tabpanel" id="dropoff-1">
                                         <div id="dropoffLocation-1">
                                             <div class="row">
                                                 <div class="col" style="margin-top: 0px;"><label class="form-label">Company Name</label><input class="form-control" type="text" id="DropoffCompanyName-1" style="margin-top: -6px;" disabled=""></div>
@@ -346,7 +346,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane active" role="tabpanel" id="dropoff-4">
+                                    <div class="tab-pane" role="tabpanel" id="dropoff-4">
                                         <div id="dropoffLocation-4">
                                             <div class="row">
                                                 <div class="col" id="DropoffCompanyName-4"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;" disabled=""></div>
@@ -504,7 +504,7 @@
                     <div class="row">
                         <div class="col"><label class="form-label">Special Instructions</label><textarea class="form-control" id="SpecialInstructions" style="height: 263px;" disabled=""></textarea></div>
                         <div class="col"><button class="btn btn-outline-primary btn-lg disabled" id="GenerateQuoteButton" type="button" style="width: 100%;margin-top: 31px;" disabled="">Generate Quote</button><label class="form-label" style="margin-top: 7px;">Price ex. VAT</label><input class="form-control" type="number" id="PriceExVAT"><label class="form-label" style="margin-top: 7px;">Price inc. VAT</label><input class="form-control" type="number" id="PriceIncVAT"><label class="form-label" style="margin-top: 7px;">Order Number</label><input class="form-control" type="number" id="OrderNumber" disabled=""></div>
-                        <div class="col"><label class="form-label">Send To Quotations</label><button class="btn btn-primary btn-lg disabled" id="QuoteButton" type="submit" style="width: 100%;" disabled="">Quotation</button><label class="form-label" style="margin-top: 7px;">Send to Booked Jobs</label><button class="btn btn-primary btn-lg disabled" id="BookButton" type="submit" style="width: 100%;" disabled="">Book Job</button><label class="form-label" style="margin-top: 7px;">Update Booking</label><textarea class="form-control" id="UpdatedText" placeholder="What has been updated?" disabled=""></textarea><button class="btn btn-warning btn-lg disabled" id="UpdatedButton" type="submit" style="width: 100%;" disabled="">Update</button></div>
+                        <div class="col"><label class="form-label">Send To Quotations</label><button class="btn btn-primary btn-lg disabled" id="QuoteButton" type="submit" style="width: 100%;" disabled="">Quotation</button><label class="form-label" style="margin-top: 7px;">Send to Booked Jobs</label><button class="btn btn-primary btn-lg disabled" id="BookButton" type="submit" style="width: 100%;" disabled="">Book Job</button><label class="form-label" style="margin-top: 7px;">Update Booking</label><textarea class="form-control" id="UpdatedText" placeholder="What has been updated?"></textarea><button class="btn btn-warning btn-lg" id="UpdatedButton" type="submit" style="width: 100%;">Update</button></div>
                     </div>
                 </div>
             </div>

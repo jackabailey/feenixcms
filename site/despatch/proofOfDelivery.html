@@ -49,10 +49,10 @@
                 </div>
                 <div class="col-md-6" style="border-left-color: rgb(198,198,198);">
                     <div class="row">
-                        <div class="col-xxl-4"><label class="form-label">Drivers Name&nbsp;</label><input class="form-control" type="text" id="PODDriverName" disabled="" style="margin-top: -6px;"></div>
-                        <div class="col-xxl-2"><label class="form-label">Cx. Number</label><input class="form-control" type="number" id="PODCustomerNumber" disabled="" style="margin-top: -6px;"></div>
-                        <div class="col-xxl-3"><label class="form-label">Customer Name</label><input class="form-control" type="text" id="PODCustomerName" disabled="" style="margin-top: -6px;"></div>
-                        <div class="col-xxl-3"><label class="form-label">Driver Phone No.</label><input class="form-control" type="tel" id="PODDricerPhoneNumber" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-4"><label class="form-label">Drivers Name&nbsp;</label><input class="form-control" type="text" id="PODDriverName" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-2"><label class="form-label">Cx. Number</label><input class="form-control" type="number" id="PODCustomerNumber" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Customer Name</label><input class="form-control" type="text" id="PODCustomerName" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Driver Phone No.</label><input class="form-control" type="tel" id="PODDricerPhoneNumber" style="margin-top: -6px;"></div>
                     </div>
                 </div>
             </div>
@@ -70,13 +70,13 @@
                 </div>
                 <div class="col-md-6" style="border-left-color: rgb(198,198,198);margin-top: 0px;">
                     <div class="row">
-                        <div class="col-xxl-3"><label class="form-label">Driver Cost</label><input class="form-control" type="number" id="PODDriverCost" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Driver Cost</label><input class="form-control" type="number" id="PODDriverCost" style="margin-top: -6px;"></div>
                         <div class="col-xxl-3"><label class="form-label">Cost Type</label>
                             <div class="form-check"><input class="form-check-input" type="radio" id="PODCostNormal" name="CostType"><label class="form-check-label" for="formCheck-17">Normal</label></div>
                             <div class="form-check"><input class="form-check-input" type="radio" id="PODCostBonus" name="CostType"><label class="form-check-label" for="formCheck-18">Bonus</label></div>
                         </div>
-                        <div class="col-xxl-3"><label class="form-label">Further Costs</label><label class="form-label">Ferry Charges</label><input class="form-control" type="number" id="PODFerryCosts" disabled="" style="margin-top: -6px;"><label class="form-label">Customer Fees</label><input class="form-control" type="number" id="PODCustomerFees" disabled="" style="margin-top: -6px;"><label class="form-label">Additional Costs</label><input class="form-control" type="number" id="PODAdditionalCosts" disabled="" style="margin-top: -6px;"></div>
-                        <div class="col-xxl-3"><label class="form-label">% Charge</label><input class="form-control" type="number" id="PODPercentageChange" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Further Costs</label><label class="form-label">Ferry Charges</label><input class="form-control" type="number" id="PODFerryCosts" style="margin-top: -6px;"><label class="form-label">Customer Fees</label><input class="form-control" type="number" id="PODCustomerFees" style="margin-top: -6px;"><label class="form-label">Additional Costs</label><input class="form-control" type="number" id="PODAdditionalCosts" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">% Charge</label><input class="form-control" type="number" id="PODPercentageChange" style="margin-top: -6px;"></div>
                     </div>
                 </div>
             </div>
@@ -238,13 +238,13 @@
                             <h1>Dropoff Details</h1>
                             <div>
                                 <ul class="nav nav-tabs nav-fill" role="tablist">
-                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-1">Drop 1</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#dropoff-1">Drop 1</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-2">Drop 2</a></li>
                                     <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-3">Drop 3</a></li>
-                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#dropoff-4">Drop 4</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-4">Drop 4</a></li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div class="tab-pane" role="tabpanel" id="dropoff-1">
+                                    <div class="tab-pane active" role="tabpanel" id="dropoff-1">
                                         <div id="dropoffLocation-1">
                                             <div class="row">
                                                 <div class="col" style="margin-top: 0px;"><label class="form-label">Company Name</label><input class="form-control" type="text" id="DropoffCompanyName-1" style="margin-top: -6px;"></div>
@@ -346,7 +346,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane active" role="tabpanel" id="dropoff-4">
+                                    <div class="tab-pane" role="tabpanel" id="dropoff-4">
                                         <div id="dropoffLocation-4">
                                             <div class="row">
                                                 <div class="col" id="DropoffCompanyName-4"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
@@ -503,8 +503,8 @@
                     </div>
                     <div class="row">
                         <div class="col"><label class="form-label">Special Instructions</label><textarea class="form-control" id="SpecialInstructions" style="height: 263px;"></textarea></div>
-                        <div class="col"><button class="btn btn-outline-primary btn-lg" id="GenerateQuoteButton" type="button" style="width: 100%;margin-top: 31px;">Generate Quote</button><label class="form-label" style="margin-top: 7px;">Price ex. VAT</label><input class="form-control" type="number" id="PriceExVAT" disabled=""><label class="form-label" style="margin-top: 7px;">Price inc. VAT</label><input class="form-control" type="number" id="PriceIncVAT" disabled=""><label class="form-label" style="margin-top: 7px;">Order Number</label><input class="form-control" type="number" id="OrderNumber" disabled=""></div>
-                        <div class="col"><label class="form-label">Send To Quotations</label><button class="btn btn-primary btn-lg" id="QuoteButton" type="submit" style="width: 100%;">Quotation</button><label class="form-label" style="margin-top: 7px;">Send to Booked Jobs</label><button class="btn btn-primary btn-lg" id="BookButton" type="submit" style="width: 100%;">Book Job</button><label class="form-label" style="margin-top: 7px;">Update Booking</label><textarea class="form-control" id="UpdatedText" placeholder="What has been updated?"></textarea><button class="btn btn-warning btn-lg" id="UpdatedButton" type="submit" style="width: 100%;">Update</button></div>
+                        <div class="col"><button class="btn btn-outline-primary btn-lg disabled" id="GenerateQuoteButton" type="button" style="width: 100%;margin-top: 31px;" disabled="">Generate Quote</button><label class="form-label" style="margin-top: 7px;">Price ex. VAT</label><input class="form-control" type="number" id="PriceExVAT" disabled=""><label class="form-label" style="margin-top: 7px;">Price inc. VAT</label><input class="form-control" type="number" id="PriceIncVAT" disabled=""><label class="form-label" style="margin-top: 7px;">Order Number</label><input class="form-control" type="number" id="OrderNumber" disabled=""></div>
+                        <div class="col"><label class="form-label">Send To Quotations</label><button class="btn btn-primary btn-lg disabled" id="QuoteButton" type="submit" style="width: 100%;" disabled="">Quotation</button><label class="form-label" style="margin-top: 7px;">Send to Booked Jobs</label><button class="btn btn-primary btn-lg disabled" id="BookButton" type="submit" style="width: 100%;" disabled="">Book Job</button><label class="form-label" style="margin-top: 7px;">Update Booking</label><textarea class="form-control" id="UpdatedText" placeholder="What has been updated?"></textarea><button class="btn btn-warning btn-lg" id="UpdatedButton" type="submit" style="width: 100%;">Update</button></div>
                     </div>
                 </div>
             </div>
