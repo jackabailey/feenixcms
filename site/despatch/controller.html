@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 
 <head>
     <meta charset="utf-8">
@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
-<body style="height: 100%;">
-    <nav class="navbar navbar-light navbar-expand-md py-3" style="background: #001133;height: 79px;">
+<body style="height: 100%;width: 100%;">
+    <nav class="navbar navbar-light navbar-expand-md py-3 position-sticky top-0" style="background: #001133;height: 79px;">
         <div class="container"><img src="../assets/img/Feenix-New-Logo-NOBG.png" width="" style="width: 70px;height: 65px;"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-3">
                 <ul class="navbar-nav mx-auto">
@@ -24,7 +24,7 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-light navbar-expand-md py-3" style="height: 36px;box-shadow: 0px 14px 20px 0px rgb(242,242,242);border-bottom-width: 0.5px;border-bottom-color: rgb(136,136,136);">
+    <nav class="navbar navbar-light navbar-expand-md py-3 position-sticky" style="height: 36px;box-shadow: 0px 14px 20px 0px rgba(0,0,0,0.05);border-bottom-width: 0.5px;border-bottom-color: rgb(136,136,136);top: 79px;backgraound: #ffffff;background: #ffffff;">
         <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
@@ -37,6 +37,140 @@
             </div>
         </div>
     </nav>
+    <div class="container" style="width: 100%;min-width: 100%;height: 90%;">
+        <div class="row" style="height: 46%;">
+            <div class="col-md-12" style="padding-top: 25px;min-width: 100%;">
+                <div style="width: 100%;">
+                    <ul class="nav nav-pills nav-fill" role="tablist">
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="pill" href="#tab-1">Tab 1</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="pill" href="#tab-2">Tab 2</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane" role="tabpanel" id="tab-1">
+                            <div class="table-responsive overflow-auto" style="padding-left: 5px;padding-right: 5px;width: 100%;min-height: 50%;max-height: 50%;">
+                                <table class="table">
+                                    <thead class="table-light position-sticky top-0">
+                                        <tr>
+                                            <th>Job No.</th>
+                                            <th>P.&nbsp; Date</th>
+                                            <th>P.&nbsp; Time</th>
+                                            <th>Vehicle</th>
+                                            <th>D.&nbsp; Time</th>
+                                            <th>D.&nbsp; Date</th>
+                                            <th>Service Required</th>
+                                            <th>M</th>
+                                            <th>S</th>
+                                            <th>P</th>
+                                            <th>P.&nbsp; Company</th>
+                                            <th>P.&nbsp; Town</th>
+                                            <th>P.&nbsp; Postcode</th>
+                                            <th>D.&nbsp; Company</th>
+                                            <th>D.&nbsp; Town</th>
+                                            <th>D.&nbsp; Postcode</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="overflow-scroll">
+                                        <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane active" role="tabpanel" id="tab-2">
+                            <div class="table-responsive overflow-auto" style="height: 100%;padding-left: 5px;padding-right: 5px;width: 100%;">
+                                <table class="table">
+                                    <thead class="table-light position-sticky top-0">
+                                        <tr>
+                                            <th>Job No.</th>
+                                            <th>P.&nbsp; Date</th>
+                                            <th>P.&nbsp; Time</th>
+                                            <th>Vehicle</th>
+                                            <th>D.&nbsp; Time</th>
+                                            <th>D.&nbsp; Date</th>
+                                            <th>Service Required</th>
+                                            <th>M</th>
+                                            <th>S</th>
+                                            <th>P</th>
+                                            <th>P.&nbsp; Company</th>
+                                            <th>P.&nbsp; Town</th>
+                                            <th>P. Postcode</th>
+                                            <th>D.&nbsp; Company</th>
+                                            <th>D.&nbsp; Town</th>
+                                            <th>D.&nbsp; Postcode</th>
+                                            <th>Driver</th>
+                                            <th>Driver Phone</th>
+                                            <th>Vehicle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="overflow-scroll">
+                                        <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="height: 46%;">
+            <div class="col-md-12" style="width: 100%;min-width: 100%;">
+                <div class="position-relative top-0" style="max-width: 100%;height: 100%;max-height: 100%;min-width: 100%;">
+                    <ul class="nav nav-pills nav-fill position-sticky top-0" role="tablist" style="height: 46px;padding-left: 5px;border-top-style: outset;padding-right: 5px;">
+                        <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="pill" href="#driversactive">Drivers Active</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="pill" href="#driversinactive">Drivers Inactive</a></li>
+                    </ul>
+                    <div class="tab-content position-static" style="height: 100%;margin-top: -41px;padding-top: 41px;">
+                        <div class="tab-pane" role="tabpanel" id="driversactive" style="max-height: 100%;height: 100%;">
+                            <div class="table-responsive overflow-auto" style="height: 100%;padding-left: 5px;padding-right: 5px;">
+                                <table class="table">
+                                    <thead class="table-light position-sticky top-0">
+                                        <tr>
+                                            <th>Driver</th>
+                                            <th>Vehicle</th>
+                                            <th>Phone Number</th>
+                                            <th>Pickup Town</th>
+                                            <th>Pickup Postcode</th>
+                                            <th>Dropoff Town</th>
+                                            <th>Dropoff Postcode</th>
+                                            <th>ETA.P</th>
+                                            <th>ETA.D1</th>
+                                            <th>ETA.D2</th>
+                                            <th>ETA.D3</th>
+                                            <th>ETA.D4</th>
+                                            <th>ETAB</th>
+                                            <th>Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="overflow-scroll">
+                                        <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane active" role="tabpanel" id="driversinactive" style="max-height: 100%;height: 100%;">
+                            <div class="table-responsive overflow-auto" style="height: 100%;padding-left: 5px;padding-right: 5px;margin-top: -3px;">
+                                <table class="table">
+                                    <thead class="table-light position-sticky top-0">
+                                        <tr>
+                                            <th>Driver</th>
+                                            <th>Vehicle</th>
+                                            <th>Phone Number</th>
+                                            <th>Address 1</th>
+                                            <th>Address 2</th>
+                                            <th>Town</th>
+                                            <th>Postcode</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="overflow-scroll">
+                                        <tr></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/NewBookings/PickupUtilities.js"></script>
 </body>
