@@ -37,120 +37,371 @@
             </div>
         </div>
     </nav>
-    <form>
+    <form style="margin-bottom: 30px;">
         <div class="container" style="min-width: 100%;max-width: 100%;margin-top: 17px;">
             <div class="row" style="padding-right: -100px;padding-left: -100px;">
-                <div class="col-md-6" style="border-right-style: solid;border-right-color: rgb(198,198,198);">
+                <div class="col-md-6" style="border-right-style: dashed;border-right-color: rgb(230,230,230);">
                     <div class="row">
-                        <div class="col-xxl-3"><label class="form-label">Job Number</label><input class="form-control" type="number" disabled="" style="margin-top: -6px;"></div>
-                        <div class="col-xxl-6"><label class="form-label">Customer</label><input class="form-control" type="search" placeholder="Search..." style="margin-top: -6px;"></div>
-                        <div class="col-xxl-3"><label class="form-label">Account Number</label><input class="form-control" type="number" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Job Number</label><input class="form-control" type="number" id="JobNumber" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-6"><label class="form-label">Customer</label><input class="form-control" type="search" id="CustomerName" placeholder="Search..." style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Account Number</label><input class="form-control" type="number" id="CustomerNumber" disabled="" style="margin-top: -6px;"></div>
                     </div>
                 </div>
-                <div class="col-md-6" style="border-left-style: solid;border-left-color: rgb(198,198,198);"></div>
+                <div class="col-md-6" style="border-left-color: rgb(198,198,198);">
+                    <div class="row">
+                        <div class="col-xxl-4"><label class="form-label">Drivers Name&nbsp;</label><input class="form-control" type="text" id="PODDriverName" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-2"><label class="form-label">Cx. Number</label><input class="form-control" type="number" id="PODCustomerNumber" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Customer Name</label><input class="form-control" type="text" id="PODCustomerName" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Driver Phone No.</label><input class="form-control" type="tel" id="PODDricerPhoneNumber" disabled="" style="margin-top: -6px;"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container" style="min-width: 100%;max-width: 100%;margin-top: 3px;">
             <div class="row" style="padding-right: -100px;padding-left: -100px;">
-                <div class="col-md-6" style="border-right-style: solid;border-right-color: rgb(198,198,198);">
+                <div class="col-md-6" style="border-right-style: dashed;border-right-color: rgb(230,230,230);">
                     <div class="row">
-                        <div class="col-xxl-4"><label class="form-label">Phone Number</label><input class="form-control" type="tel" disabled="" style="margin-top: -6px;"></div>
-                        <div class="col-xxl-5"><label class="form-label">Email Address</label><input class="form-control" type="search" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-4"><label class="form-label">Phone Number</label><input class="form-control" type="tel" id="CustomerPhoneNumber" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-5"><label class="form-label">Email Address</label><input class="form-control" type="search" id="CustomerEmailAddress" style="margin-top: -6px;"></div>
                         <div class="col-xxl-3">
-                            <div class="form-check" style="margin-top: 27px;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Cash/Credit Account</label></div>
+                            <div class="form-check" style="margin-top: 27px;"><input class="form-check-input" type="checkbox" id="CashCreditCheckbox"><label class="form-check-label" for="formCheck-1">Cash/Credit Account</label></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6" style="border-left-style: solid;border-left-color: rgb(198,198,198);"></div>
+                <div class="col-md-6" style="border-left-color: rgb(198,198,198);margin-top: 0px;">
+                    <div class="row">
+                        <div class="col-xxl-3"><label class="form-label">Driver Cost</label><input class="form-control" type="number" id="PODDriverCost" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">Cost Type</label>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="PODCostNormal" name="CostType"><label class="form-check-label" for="formCheck-17">Normal</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="PODCostBonus" name="CostType"><label class="form-check-label" for="formCheck-18">Bonus</label></div>
+                        </div>
+                        <div class="col-xxl-3"><label class="form-label">Further Costs</label><label class="form-label">Ferry Charges</label><input class="form-control" type="number" id="PODFerryCosts" disabled="" style="margin-top: -6px;"><label class="form-label">Customer Fees</label><input class="form-control" type="number" id="PODCustomerFees" disabled="" style="margin-top: -6px;"><label class="form-label">Additional Costs</label><input class="form-control" type="number" id="PODAdditionalCosts" disabled="" style="margin-top: -6px;"></div>
+                        <div class="col-xxl-3"><label class="form-label">% Charge</label><input class="form-control" type="number" id="PODPercentageChange" disabled="" style="margin-top: -6px;"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container" style="min-width: 100%;max-width: 100%;">
             <div class="row">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col offset-xxl-0">
-                            <h1 style="font-size: 28px;color: rgb(116,116,116);margin-top: 6px;">Pickup Details</h1>
-                            <div class="row">
-                                <div class="col" style="margin-top: -7px;"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" placeholder="Address Line 1" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 2" style="margin-top: 3px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 3" style="margin-top: 3px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 4" style="margin-top: 3px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" style="width: 184.75px;margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xxl-12 offset-xl-0 offset-xxl-0" style="width: 100%;margin-top: 4px;margin-right: auto;margin-left: auto;">
-                                    <div class="btn-toolbar justify-content-center">
-                                        <div class="btn-group" role="group"><button class="btn btn-primary disabled" type="button" style="width: 78px;height: 35px;color: rgb(0,0,0);background: rgb(255,255,255);border-top-color: rgb(255,255,255);border-right-color: rgb(255,255,255);border-bottom-color: rgb(252,252,252);border-left-color: rgb(255,255,255);" disabled="">&lt;</button><button class="btn btn-primary disabled" type="button" style="width: 78px;height: 35px;color: rgb(0,0,0);background: rgb(255,255,255);border-top-color: rgb(255,255,255);border-right-color: rgb(255,255,255);border-bottom-color: rgb(252,252,252);border-left-color: rgb(255,255,255);" disabled="">-</button></div>
-                                        <div class="btn-group" role="group"><button class="btn btn-primary" type="button" style="width: 78px;height: 35px;color: rgb(0,0,0);background: rgb(255,255,255);border-top-color: rgb(255,255,255);border-right-color: rgb(255,255,255);border-bottom-color: rgb(252,252,252);border-left-color: rgb(255,255,255);">+</button><button class="btn btn-primary disabled" type="button" style="width: 78px;height: 35px;color: rgb(0,0,0);background: rgb(255,255,255);border-top-color: rgb(255,255,255);border-right-color: rgb(255,255,255);border-bottom-color: rgb(252,252,252);border-left-color: rgb(255,255,255);" disabled="">&gt;</button></div>
+                        <div class="col">
+                            <h1>Pickup Details</h1>
+                            <div>
+                                <ul class="nav nav-tabs nav-fill" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#pickup-1">Pickup 1</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#pickup-2">Pickup 2</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" id="PickupCompanyName-3" href="#pickup-3">Pickup 3</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" id="PickupCompanyName-4" href="#pickup-4">Pickup 4</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" id="pickup-1">
+                                        <div id="pickupLocation-1">
+                                            <div class="row">
+                                                <div class="col" style="margin-top: 0px;"><label class="form-label">Company Name</label><input class="form-control" type="text" id="PickupCompanyName-1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" id="PODAddressLine1-1" placeholder="Address Line 1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine2-1" placeholder="Address Line 2" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine3-1" placeholder="Address Line 3" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine4-1" placeholder="Address Line 4" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" id="PickupTown-1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" id="PickupPostcode-1" style="width: 184.75px;margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" id="PickupContact-1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col" style="margin-bottom: 15px;margin-right: -8px;"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="pickup-2">
+                                        <div id="pickupLocation-2">
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Company Name</label><input class="form-control" type="text" id="PickupCompanyName-2" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" id="PODAddressLine1-2" placeholder="Address Line 1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine2-2" placeholder="Address Line 2" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine3-2" placeholder="Address Line 3" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine4-2" placeholder="Address Line 4" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" id="PickupTown-2" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" id="PickupPostcode-2" style="width: 184.75px;margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" id="PickupContact-2" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col" style="margin-bottom: 15px;margin-right: -8px;"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="pickup-3">
+                                        <div id="pickupLocation-3">
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" id="PODAddressLine1-3" placeholder="Address Line 1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine2-3" placeholder="Address Line 2" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine3-3" placeholder="Address Line 3" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine4-3" placeholder="Address Line 4" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" id="PickupTown-3" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" id="PickupPostcode-3" style="width: 184.75px;margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" id="PickupContact-3" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col" style="margin-bottom: 15px;margin-right: -8px;"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="pickup-4">
+                                        <div id="pickupLocation-4">
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" id="PODAddressLine1-4" placeholder="Address Line 1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine2-4" placeholder="Address Line 2" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine3-4" placeholder="Address Line 3" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" id="PODAddressLine4-4" placeholder="Address Line 4" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" id="PickupTown-4" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" id="PickupPostcode-4" style="width: 184.75px;margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" id="PickupContact-4" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col" style="margin-bottom: 15px;margin-right: -8px;"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <h1 style="font-size: 28px;color: rgb(116,116,116);margin-top: 6px;">Dropoff Details</h1>
-                            <div class="row">
-                                <div class="col" style="margin-top: -7px;"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" placeholder="Address Line 1" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 2" style="margin-top: 3px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 3" style="margin-top: 3px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 4" style="margin-top: 3px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" style="width: 184.75px;margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                        <div class="col" style="border-right-style: dashed;border-right-color: rgb(230,230,230);">
+                            <h1>Dropoff Details</h1>
+                            <div>
+                                <ul class="nav nav-tabs nav-fill" role="tablist">
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#dropoff-1">Drop 1</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-2">Drop 2</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-3">Drop 3</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#dropoff-4">Drop 4</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" role="tabpanel" id="dropoff-1">
+                                        <div id="dropoffLocation-1">
+                                            <div class="row">
+                                                <div class="col" style="margin-top: 0px;"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" placeholder="Address Line 1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 2" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 3" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 4" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" style="width: 184.75px;margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col" style="margin-bottom: 15px;margin-right: -8px;"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="dropoff-2">
+                                        <div id="dropoffLocation-2">
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" placeholder="Address Line 1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 2" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 3" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 4" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" style="width: 184.75px;margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col" style="margin-bottom: 15px;margin-right: -8px;"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="dropoff-3">
+                                        <div id="dropoffLocation-3">
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" placeholder="Address Line 1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 2" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 3" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 4" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" style="width: 184.75px;margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col" style="margin-bottom: 15px;margin-right: -8px;"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" role="tabpanel" id="dropoff-4">
+                                        <div id="dropoffLocation-4">
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Company Name</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Address</label><input class="form-control" type="text" placeholder="Address Line 1" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 2" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 3" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><input class="form-control" type="text" placeholder="Address Line 4" style="margin-top: 3px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" style="width: 184.75px;margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Contact</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col"><label class="form-label">Phone Number</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col" style="margin-bottom: 15px;margin-right: -8px;"><label class="form-label">Location</label><input class="form-control" type="text" style="margin-top: -6px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <h1>Proof of Delivery</h1>
+                    <div class="row">
+                        <div class="col"><label class="form-label">Town</label><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""></div>
+                        <div class="col"><label class="form-label">Postcode</label><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""></div>
+                        <div class="col"><label class="form-label">Name</label><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""></div>
+                        <div class="col"><label class="form-label">Time</label><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""></div>
+                        <div class="col"><label class="form-label">Date</label><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""><input class="form-control" type="text" disabled=""></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container" style="min-width: 100%;max-width: 100%;">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
+                <div class="col-md-6" id="itemsColumn" style="border-right-style: dashed;border-right-color: rgb(230,230,230);">
+                    <h1>Items</h1>
+                    <div class="row" id="item-1">
                         <div class="col"><label class="form-label">Item Size (Square Meters)</label><input class="form-control" type="number" unit="kg"></div>
                         <div class="col"><label class="form-label">Item Weight (kg)</label><input class="form-control" type="number"></div>
                         <div class="col"><label class="form-label">Number of this item</label><input class="form-control" type="number" style="width: 188.125px;"></div>
@@ -158,21 +409,111 @@
                             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Valuable Item?</label></div><input class="form-control" type="number" style="width: 171.125px;margin-left: 19px;margin-top: 8px;" disabled="" placeholder="Value in £">
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col"><label class="form-label" style="margin-top: 5px;">Add More Items</label>
-                            <div class="btn-toolbar justify-content-center">
-                                <div class="btn-group" role="group"><button class="btn btn-primary disabled" type="button" style="width: 78px;height: 35px;color: rgb(0,0,0);background: #ffe8e8;border-top-color: rgb(255,255,255);border-right-color: rgb(255,255,255);border-bottom-color: rgb(252,252,252);border-left-color: rgb(255,255,255);" disabled="">-</button></div>
-                                <div class="btn-group" role="group" style="background: #f7f7f7;"><button class="btn btn-primary" type="button" style="width: 78px;height: 35px;color: rgb(0,0,0);background: #f4fff2;border-top-color: rgb(255,255,255);border-right-color: rgb(255,255,255);border-bottom-color: rgb(252,252,252);border-left-color: rgb(255,255,255);">+</button></div>
-                            </div>
+                    <div class="row" id="item-2">
+                        <div class="col"><label class="form-label">Item Size (Square Meters)</label><input class="form-control" type="number" unit="kg"></div>
+                        <div class="col"><label class="form-label">Item Weight (kg)</label><input class="form-control" type="number"></div>
+                        <div class="col"><label class="form-label">Number of this item</label><input class="form-control" type="number" style="width: 188.125px;"></div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Valuable Item?</label></div><input class="form-control" type="number" style="width: 171.125px;margin-left: 19px;margin-top: 8px;" disabled="" placeholder="Value in £">
                         </div>
                     </div>
+                    <div class="row" id="item-3">
+                        <div class="col"><label class="form-label">Item Size (Square Meters)</label><input class="form-control" type="number" unit="kg"></div>
+                        <div class="col"><label class="form-label">Item Weight (kg)</label><input class="form-control" type="number"></div>
+                        <div class="col"><label class="form-label">Number of this item</label><input class="form-control" type="number" style="width: 188.125px;"></div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Valuable Item?</label></div><input class="form-control" type="number" style="width: 171.125px;margin-left: 19px;margin-top: 8px;" disabled="" placeholder="Value in £">
+                        </div>
+                    </div>
+                    <div class="row" id="item-4">
+                        <div class="col"><label class="form-label">Item Size (Square Meters)</label><input class="form-control" type="number" unit="kg"></div>
+                        <div class="col"><label class="form-label">Item Weight (kg)</label><input class="form-control" type="number"></div>
+                        <div class="col"><label class="form-label">Number of this item</label><input class="form-control" type="number" style="width: 188.125px;"></div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Valuable Item?</label></div><input class="form-control" type="number" style="width: 171.125px;margin-left: 19px;margin-top: 8px;" disabled="" placeholder="Value in £">
+                        </div>
+                    </div>
+                    <div class="row" id="item-5">
+                        <div class="col"><label class="form-label">Item Size (Square Meters)</label><input class="form-control" type="number" unit="kg"></div>
+                        <div class="col"><label class="form-label">Item Weight (kg)</label><input class="form-control" type="number"></div>
+                        <div class="col"><label class="form-label">Number of this item</label><input class="form-control" type="number" style="width: 188.125px;"></div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Valuable Item?</label></div><input class="form-control" type="number" style="width: 171.125px;margin-left: 19px;margin-top: 8px;" disabled="" placeholder="Value in £">
+                        </div>
+                    </div>
+                    <div class="row" id="item-6">
+                        <div class="col"><label class="form-label">Item Size (Square Meters)</label><input class="form-control" type="number" unit="kg"></div>
+                        <div class="col"><label class="form-label">Item Weight (kg)</label><input class="form-control" type="number"></div>
+                        <div class="col"><label class="form-label">Number of this item</label><input class="form-control" type="number" style="width: 188.125px;"></div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-7"><label class="form-check-label" for="formCheck-7">Valuable Item?</label></div><input class="form-control" type="number" style="width: 171.125px;margin-left: 19px;margin-top: 8px;" disabled="" placeholder="Value in £">
+                        </div>
+                    </div>
+                    <div class="row" id="item-7">
+                        <div class="col"><label class="form-label">Item Size (Square Meters)</label><input class="form-control" type="number" unit="kg"></div>
+                        <div class="col"><label class="form-label">Item Weight (kg)</label><input class="form-control" type="number"></div>
+                        <div class="col"><label class="form-label">Number of this item</label><input class="form-control" type="number" style="width: 188.125px;"></div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-8"><label class="form-check-label" for="formCheck-8">Valuable Item?</label></div><input class="form-control" type="number" style="width: 171.125px;margin-left: 19px;margin-top: 8px;" disabled="" placeholder="Value in £">
+                        </div>
+                    </div>
+                    <div class="row" id="item-8">
+                        <div class="col"><label class="form-label">Item Size (Square Meters)</label><input class="form-control" type="number" unit="kg"></div>
+                        <div class="col"><label class="form-label">Item Weight (kg)</label><input class="form-control" type="number"></div>
+                        <div class="col"><label class="form-label">Number of this item</label><input class="form-control" type="number" style="width: 188.125px;"></div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-9"><label class="form-check-label" for="formCheck-9">Valuable Item?</label></div><input class="form-control" type="number" style="width: 171.125px;margin-left: 19px;margin-top: 8px;" disabled="" placeholder="Value in £">
+                        </div>
+                    </div>
+                    <div class="row" id="totalItemFigures" style="margin-top: 19px;">
+                        <div class="col"><label class="form-label">Total Item Size</label><input class="form-control" type="number" unit="kg"></div>
+                        <div class="col"><label class="form-label">Total Item Weight</label><input class="form-control" type="number"></div>
+                        <div class="col"><label class="form-label">Total Number of Items</label><input class="form-control" type="number" style="width: 188.125px;"></div>
+                        <div class="col"><label class="form-label">Total Value of Items</label><input class="form-control" type="number" style="width: 171.125px;" disabled="" placeholder="Value in £"></div>
+                    </div>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-19" style="width: 30px;height: 30px;margin-right: 13px;" disabled=""><label class="form-check-label" for="formCheck-19" style="font-size: 28px;">Job Complete?</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-20" style="width: 30px;height: 30px;margin-right: 13px;" disabled=""><label class="form-check-label" for="formCheck-20" style="font-size: 28px;">Hard Copy POD Returned?</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-21" style="width: 30px;height: 30px;margin-right: 13px;" disabled=""><label class="form-check-label" for="formCheck-21" style="font-size: 28px;">Job Paid To Subcontractor?</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-22" style="width: 30px;height: 30px;margin-right: 13px;" disabled=""><label class="form-check-label" for="formCheck-22" style="font-size: 28px;">Job Invoiced Out?</label></div>
+                    <div class="form-check" style="margin-top: 29px;"><input class="form-check-input" type="checkbox" id="formCheck-23" style="width: 30px;height: 30px;margin-right: 13px;" disabled=""><label class="form-check-label" for="formCheck-23" style="font-size: 28px;">Has Job Changed Since Despatch?</label></div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="min-width: 100%;max-width: 100%;">
+            <div class="row">
+                <div class="col-md-6" id="itemsColumn-1">
+                    <h1 style="margin-top: 9px;">Other Details</h1>
+                </div>
+                <div class="col">
+                    <div class="row"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col"><label class="form-label">Vehicle Required</label><input class="form-control" type="search"></div>
+                        <div class="col">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-10"><label class="form-check-label" for="formCheck-10">Congestion Zone</label></div><input class="form-control" type="number" style="margin-top: 8px;" disabled="" placeholder="Value in £">
+                            <div class="form-check" style="margin-top: 5px;"><input class="form-check-input" type="checkbox" id="formCheck-11"><label class="form-check-label" for="formCheck-11">Parking</label></div><input class="form-control" type="number" style="margin-top: 8px;" disabled="" placeholder="Value in £">
+                            <div class="form-check" style="margin-top: 5px;"><input class="form-check-input" type="checkbox" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Toll</label></div><input class="form-control" type="number" style="margin-top: 8px;" disabled="" placeholder="Value in £">
+                            <div class="form-check" style="margin-top: 5px;"><input class="form-check-input" type="checkbox" id="formCheck-13"><label class="form-check-label" for="formCheck-13">Overtime</label></div><input class="form-control" type="number" style="margin-top: 8px;" disabled="" placeholder="Value in £">
+                            <div class="form-check" style="margin-top: 5px;"><input class="form-check-input" type="checkbox" id="formCheck-14"><label class="form-check-label" for="formCheck-14">Returns</label></div><input class="form-control" type="number" style="margin-top: 8px;" disabled="" placeholder="Value in £">
+                            <div class="form-check" style="margin-top: 5px;"><input class="form-check-input" type="checkbox" id="formCheck-15"><label class="form-check-label" for="formCheck-15">Waiting Time</label></div><input class="form-control" type="number" style="margin-top: 8px;" disabled="" placeholder="Value in £">
+                            <div class="form-check" style="margin-top: 5px;"><input class="form-check-input" type="checkbox" id="formCheck-16"><label class="form-check-label" for="formCheck-16">OACC</label></div><input class="form-control" type="number" style="margin-top: 8px;" disabled="" placeholder="Value in £">
+                        </div>
+                        <div class="col"><label class="form-label">When is the FIRST item ready for pickup?</label><input class="form-control"><label class="form-label">When is the item to be dropper off by?</label><input class="form-control"><label class="form-label" style="margin-top: 27px;">Calculated Pickup-Dropoff Mileage</label><input class="form-control" type="number" disabled=""><label class="form-label" style="margin-top: 27px;">Rough ETA</label><input class="form-control" disabled=""></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><label class="form-label">Special Instructions</label><textarea class="form-control" style="height: 263px;"></textarea></div>
+                        <div class="col"><button class="btn btn-outline-primary btn-lg" type="button" style="width: 100%;margin-top: 31px;">Generate Quote</button><label class="form-label" style="margin-top: 7px;">Price ex. VAT</label><input class="form-control" type="number" disabled=""><label class="form-label" style="margin-top: 7px;">Price inc. VAT</label><input class="form-control" type="number" disabled=""><label class="form-label" style="margin-top: 7px;">Order Number</label><input class="form-control" type="number" disabled=""></div>
+                        <div class="col"><label class="form-label">Send To Quotations</label><button class="btn btn-primary btn-lg" type="submit" style="width: 100%;">Quotation</button><label class="form-label" style="margin-top: 7px;">Send to Booked Jobs</label><button class="btn btn-primary btn-lg" type="submit" style="width: 100%;">Book Job</button><label class="form-label" style="margin-top: 7px;">Update Booking</label><textarea class="form-control" placeholder="What has been updated?"></textarea><button class="btn btn-warning btn-lg" type="submit" style="width: 100%;">Update</button></div>
+                    </div>
+                </div>
             </div>
         </div>
     </form>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/NewBookings/PickupUtilities.js"></script>
 </body>
 
 </html>
