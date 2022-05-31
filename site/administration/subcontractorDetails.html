@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md py-3" style="background: #001133;height: 79px;">
+    <nav class="navbar navbar-light navbar-expand-md py-3 position-sticky top-0" style="background: #001133;height: 79px;">
         <div class="container"><img src="../assets/img/Feenix-New-Logo-NOBG.png" width="" style="width: 70px;height: 65px;"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-3">
                 <ul class="navbar-nav mx-auto">
@@ -24,7 +24,7 @@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-light navbar-expand-md py-3" style="height: 36px;box-shadow: 0px 14px 20px 0px rgb(242,242,242);border-bottom-width: 0.5px;border-bottom-color: rgb(136,136,136);">
+    <nav class="navbar navbar-light navbar-expand-md py-3 position-sticky" style="height: 36px;box-shadow: 0px 14px 20px 0px rgba(0,0,0,0.05);border-bottom-width: 0.5px;border-bottom-color: rgb(136,136,136);top: 79px;backgraound: #ffffff;background: #ffffff;">
         <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
@@ -40,6 +40,30 @@
             </div>
         </div>
     </nav>
+    <div class="row">
+        <div class="col">
+            <form>
+                <div class="row">
+                    <div class="col" style="max-width: 80%;margin-right: 134px;margin-left: 134px;margin-top: 28px;"><label class="form-label">Name</label><input class="form-control" type="text" id="subcontractorName"><label class="form-label">Real Name</label><input class="form-control" type="text" id="subcontractorRealName"><label class="form-label">Address</label><input class="form-control" type="text" id="subcontractorAddr-1"><input class="form-control" type="text" id="subcontractorAddr-2"><input class="form-control" type="text" id="subcontractorAddr-3"><input class="form-control" type="text" id="subcontractorAddr-4" placeholder="Town"><input class="form-control" type="text" id="subcontractorAddr-5" placeholder="Postcode"><label class="form-label">Home Phone Number</label><input class="form-control" type="tel" id="subcontractorHomePhone"><label class="form-label">Mobile Phone Number</label><input class="form-control" type="tel" id="subcontractorHomePhone-1"><label class="form-label">Date of Birth</label><input class="form-control" id="subcontractorHomePhone-2"><label class="form-label">NI Number</label><input class="form-control" type="number" id="subcontractorHomePhone-3"><label class="form-label">VAT Number</label><input class="form-control" type="number" id="subcontractorHomePhone-4"><label class="form-label">Tax Number</label><input class="form-control" type="number" id="subcontractorHomePhone-5"><label class="form-label">Do they have company equiptment?</label>
+                        <div class="form-check" name="equiptment"><input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Yes</label></div>
+                        <div class="form-check" nsme="equiptment"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">No</label></div><label class="form-label">Company Phone Number</label><input class="form-control" type="tel" id="subcontractorHomePhone-6"><label class="form-label">Company Tracker Number</label><input class="form-control" type="text" id="subcontractorHomePhone-7">
+                    </div>
+                    <div class="col">
+                        <form>
+                            <div class="row">
+                                <div class="col" style="max-width: 80%;margin-right: 134px;margin-left: 134px;margin-top: 28px;"><label class="form-label">Subcontractor or Employed</label>
+                                    <div class="form-check" name="subcontract"><input class="form-check-input" type="radio" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Subcontractor</label></div>
+                                    <div class="form-check" name="subcontract"><input class="form-check-input" type="radio" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Employed</label></div><label class="form-label" style="margin-top: 16px;">Vehicle Type</label><input class="form-control" type="text" id="subcontractorRealName-1"><label class="form-label">Vehicle Registration</label><input class="form-control" type="text" id="subcontractorAddr-6"><label class="form-label">Ulez Compliance</label>
+                                    <div class="form-check" name="ulez"><input class="form-check-input" type="radio" id="formCheck-7" name="ulez"><label class="form-check-label" for="formCheck-7" name="ulez">Yes</label></div>
+                                    <div class="form-check" name="ulez"><input class="form-check-input" type="radio" id="formCheck-8"><label class="form-check-label" for="formCheck-8">No</label></div><label class="form-label">Goods In Transit Insurance</label><input class="form-control" id="subcontractorHomePhone-9"><label class="form-label">Hire and Reward Insurance</label><input class="form-control" id="subcontractorHomePhone-10"><label class="form-label">Company Fuel Card</label><input class="form-control" type="number" id="subcontractorHomePhone-11"><label class="form-label">Rate of Pay</label><input class="form-control" type="number" id="subcontractorHomePhone-12"><label class="form-label">Lower Pay Percentage</label><input class="form-control" type="number" id="subcontractorHomePhone-13"><label class="form-label">Higher Pay Percentage</label><input class="form-control" type="tel" id="subcontractorHomePhone-14">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/NewBookings/PickupUtilities.js"></script>
 </body>
