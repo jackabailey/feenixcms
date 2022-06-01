@@ -1,0 +1,29 @@
+{
+  "name": "feenix-couriers-mgmt",
+  "productName": "Feenix Couriers Management System",
+  "version": "1.0.0",
+  "description": "Feenix Couriers Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackabailey/feenix-couriers-management-application.git"
+  },
+  "keywords": [
+    "feenix",
+    "couriers",
+    "application"
+  ],
+  "author": "Jack Bailey, Cody Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackabailey/feenix-couriers-management-application/issues"
+  },
+  "homepage": "https://github.com/jackabailey/feenix-couriers-management-application#readme",
+  "devDependencies": {
+    "electron": "^19.0.1"
+  }
+}
