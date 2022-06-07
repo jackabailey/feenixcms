@@ -1,3 +1,3 @@
-# feenix-couriers-management-applciation
+# feenixcms
 
 A web application for Feenix Couriers
